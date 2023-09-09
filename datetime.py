@@ -1,11 +1,18 @@
-print('This programme will print date amd time')
-from datetime import datetime
+# Program to sort alphabetically the words form a string provided by the user
 
-# datetime object containing current date and time
-now = datetime.now()
+my_str = "Hello this Is an Example With cased letters"
 
-print("now =", now)
+# To take input from the user
+#my_str = input("Enter a string: ")
 
-# dd/mm/YY H:M:S
-dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-print("date and time =", dt_string)
+# breakdown the string into a list of words
+words = [word.lower() for word in my_str.split()]
+
+# sort the list
+words.sort()
+
+# display the sorted words
+
+print("The sorted words are:")
+for word in words:
+   print(word)
