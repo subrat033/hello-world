@@ -1,4 +1,4 @@
-print('Hello World')
+print('This programme will print date amd time')
 from datetime import datetime
 
 # datetime object containing current date and time
